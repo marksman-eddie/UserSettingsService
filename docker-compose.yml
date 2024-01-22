@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  usermanagment.presentation:
+    image: ${DOCKER_REGISTRY-}usermanagmentpresentation
+    build:
+      context: .
+      dockerfile: Dockerfile
